@@ -1,0 +1,36 @@
+div#stencils
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: #e67e22
+    margin-top: 70px
+    border-radius: 50px
+    padding: 10px
+    color: white
+    div.stencils-title
+        margin: 30px 10px
+        padding: 10px 10px
+        font-size: 20px
+        text-align: center
+        width: 90%
+        border-top: solid 4px white
+        border-bottom: solid 4px white
+    div.boxes
+        width: 90%
+        height: 50px
+        background-color: #fff
+        margin: 10px
+        border-radius: 30px
+    div.boxes:nth-last-of-type(1)
+        margin-bottom: 70px
+@media (min-width: 1024px)
+    div#stencils div.stencils-title, div#stencils div.boxes
+        width: 70%
+@media (min-width: 1400px)
+    div#stencils div.stencils-title
+        width: 65%
+        font-size: 30px
+    div#stencils div.boxes
+        width: 65%
+        height: 70px

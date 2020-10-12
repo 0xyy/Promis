@@ -9,16 +9,21 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+html body {
   font-family: 'Open Sans', sans-serif;
   min-width: 300px;
 }
 
-header {
+html body .wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#header {
   background-color: #fff;
 }
 
-header div.title {
+#header div.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +35,7 @@ header div.title {
   height: 60px;
 }
 
-header div.title div.logo {
+#header div.title div.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,18 +46,18 @@ header div.title div.logo {
   padding-left: 20px;
 }
 
-header div.title div.logo img {
+#header div.title div.logo img {
   height: 60px;
 }
 
-header div.title h1 {
+#header div.title h1 {
   font-family: 'Sansita Swashed', cursive;
   margin: 0 auto;
   font-size: 50px;
   font-weight: 400;
 }
 
-header section {
+#header section {
   margin-top: 30px;
   width: 100%;
   height: 500px;
@@ -64,7 +69,7 @@ header section {
   border-bottom-right-radius: 50px;
 }
 
-header section div.nav {
+#header section div.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,34 +83,59 @@ header section div.nav {
   width: 100px;
 }
 
-header section div.nav ul {
+#header section div.nav ul {
   list-style: none;
 }
 
-header section div.nav ul li {
+#header section div.nav ul li {
   padding: 0 0 40px 30px;
-  text-align: center;
+  text-align: left;
+  width: 300px;
 }
 
-header section div.nav ul li a {
+#header section div.nav ul li a {
   font-size: 35px;
   padding: 10px;
   text-decoration: none;
   color: white;
 }
 
+#header section div.nav ul li a i {
+  margin-right: 10px;
+  text-align: center;
+  width: 40px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#header section div.nav ul li a span {
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 @media (min-width: 1024px) {
-  header section {
+  #header section {
     height: 700px;
   }
-  header section div.nav {
+  #header section div.nav {
     height: 700px;
+  }
+  #header section div.nav ul li a i:hover + span {
+    opacity: 1;
+  }
+  #header section div.nav ul li a i:hover {
+    margin-right: 30px;
   }
 }
 
 @media (min-width: 1400px) {
-  header section {
+  #header section {
+    height: 800px;
     background-position: bottom;
+  }
+  #header section div.nav {
+    height: 800px;
   }
 }
 
@@ -148,7 +178,7 @@ div#about div.msg {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 70px;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 div#about div.msg div.img {
@@ -289,10 +319,34 @@ div#stencils div.stencils-title {
 
 div#stencils div.boxes {
   width: 90%;
-  height: 50px;
+  height: 80px;
   background-color: #fff;
   margin: 10px;
   border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#stencils div.boxes a {
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+div#stencils div.boxes a:hover {
+  color: #e67e22;
 }
 
 div#stencils div.boxes:nth-last-of-type(1) {
@@ -302,6 +356,9 @@ div#stencils div.boxes:nth-last-of-type(1) {
 @media (min-width: 1024px) {
   div#stencils div.stencils-title, div#stencils div.boxes {
     width: 70%;
+  }
+  div#stencils div.boxes {
+    height: 60px;
   }
 }
 
@@ -314,5 +371,134 @@ div#stencils div.boxes:nth-last-of-type(1) {
     width: 65%;
     height: 70px;
   }
+}
+
+h1 {
+  margin-top: 60px;
+}
+
+div#map-container {
+  height: 400px;
+  background-color: #e67e22;
+  margin-top: 50px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div#map-container div.map {
+  background-color: #fff;
+  height: 300px;
+  width: 90%;
+}
+
+div#map-container div.map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  div#map-container div.map {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  div#map-container {
+    height: 500px;
+  }
+  div#map-container div.map {
+    height: 400px;
+  }
+}
+
+div#contact {
+  height: 350px;
+  background-color: #E1E1E1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 70px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+div#contact div.info {
+  text-align: center;
+}
+
+div#contact div.info h2 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+div#contact div.info p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+div#contact div.info p a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+div#contact div.info p a:hover {
+  color: #e67e22;
+}
+
+div#contact div.contact-logo {
+  margin: 15px 0;
+}
+
+div#contact div.contact-logo img {
+  width: 70px;
+}
+
+@media (min-width: 1400px) {
+  div#contact {
+    height: 250px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  div#contact div.info {
+    text-align: left;
+  }
+  div#contact div.contact-logo {
+    margin-left: 50px;
+  }
+  div#contact div.contact-logo img {
+    width: 100px;
+  }
+}
+
+div.footer {
+  background-color: #E1E1E1;
+  border-top: 3px solid #e67e22;
+}
+
+div.footer p {
+  padding: 15px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

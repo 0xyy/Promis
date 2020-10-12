@@ -1,4 +1,4 @@
-header
+#header
     // overflow: hidden
     background-color: #fff
     div.title
@@ -39,18 +39,34 @@ header
                 list-style: none
                 li
                     padding: 0 0 40px 30px
-                    text-align: center
+                    text-align: left
+                    width: 300px
                     a
                         font-size: 35px
                         padding: 10px
                         text-decoration: none
                         color: white
+                        i
+                            margin-right: 10px
+                            text-align: center
+                            width: 40px
+                            transition: .2s
+                        span
+                            opacity: 0
+                            transition: .2s
 @media (min-width: 1024px)
-    header section
+    #header section
         height: 700px
-    header section div.nav
+    #header section div.nav
         height: 700px
+    #header section div.nav ul li a i:hover+span
+        opacity: 1
+    #header section div.nav ul li a i:hover
+        margin-right: 30px
 
 @media (min-width: 1400px)
-    header section
+    #header section
+        height: 800px
         background-position: bottom
+    #header section div.nav
+        height: 800px

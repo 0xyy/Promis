@@ -1,0 +1,38 @@
+div#contact
+    height: 350px
+    background-color: #E1E1E1
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin-top: 70px
+    border-top-left-radius: 50px
+    border-top-right-radius: 50px
+    div.info
+        text-align: center
+        h2
+            font-size: 30px
+            margin: 20px 0
+        p
+            font-size: 20px
+            line-height: 30px
+            a
+                text-decoration: none
+                color: black
+                transition: .2s
+            a:hover
+                color: #e67e22
+    div.contact-logo
+        margin: 15px 0
+        img
+            width: 70px
+@media (min-width: 1400px)
+    div#contact
+        height: 250px
+        flex-direction: row
+    div#contact div.info
+        text-align: left
+    div#contact div.contact-logo
+        margin-left: 50px
+    div#contact div.contact-logo img
+        width: 100px

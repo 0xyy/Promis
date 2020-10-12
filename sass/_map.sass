@@ -1,0 +1,25 @@
+h1
+    margin-top: 60px
+div#map-container
+    height: 400px
+    background-color: #e67e22
+    margin-top: 50px
+    border-radius: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    div.map
+        background-color: #fff
+        height: 300px
+        width: 90%
+        iframe
+            height: 100%
+            width: 100%
+@media (min-width: 1024px)
+    div#map-container div.map
+        width: 50%
+@media (min-width: 1400px)
+    div#map-container
+        height: 500px
+    div#map-container div.map
+        height: 400px

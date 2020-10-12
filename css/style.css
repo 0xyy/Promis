@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -28,8 +28,8 @@ html body .wrap {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 20px;
   width: 100%;
   height: 60px;
@@ -40,8 +40,8 @@ html body .wrap {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 60px;
   padding-left: 20px;
 }
@@ -74,11 +74,11 @@ html body .wrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 500px;
   width: 100px;
 }
@@ -118,15 +118,12 @@ html body .wrap {
   #header section {
     height: 700px;
   }
-
   #header section div.nav {
     height: 700px;
   }
-
-  #header section div.nav ul li a i:hover+span {
+  #header section div.nav ul li a i:hover + span {
     opacity: 1;
   }
-
   #header section div.nav ul li a i:hover {
     margin-right: 30px;
   }
@@ -137,7 +134,6 @@ html body .wrap {
     height: 800px;
     background-position: bottom;
   }
-
   #header section div.nav {
     height: 800px;
   }
@@ -159,8 +155,8 @@ div#about {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #E1E1E1;
   border-radius: 50px;
   margin-top: 50px;
@@ -179,8 +175,8 @@ div#about div.msg {
   height: 250px;
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 100px;
   padding-top: 70px;
 }
@@ -202,8 +198,8 @@ div#about div.msg div.text {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div#about div.msg div.text p {
@@ -231,8 +227,8 @@ div#about div.msg #four {
 div#about div.msg:nth-of-type(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 div#about div.msg:nth-of-type(even) img {
@@ -257,25 +253,20 @@ div#about div.msg:nth-of-type(odd) img {
   h1 {
     font-size: 60px;
   }
-
   div#about h2 {
     font-size: 40px;
   }
-
   div#about div.msg {
     height: 500px;
     margin-bottom: 100px;
   }
-
   div#about div.msg div.img img {
     height: 500px;
     border-radius: 0;
   }
-
   div#about div.msg div.text {
     height: 500px;
   }
-
   div#about div.msg div.text p {
     font-size: 30px;
     line-height: 60px;
@@ -286,12 +277,10 @@ div#about div.msg:nth-of-type(odd) img {
   h1 {
     margin-top: 30px;
   }
-
   div#about div.msg {
     padding: 0 100px;
     margin: 30px 0 120px;
   }
-
   div#about div.msg div.text p {
     padding: 30px;
   }
@@ -303,14 +292,14 @@ div#stencils {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #e67e22;
   margin-top: 70px;
   border-radius: 50px;
@@ -338,11 +327,11 @@ div#stencils div.boxes {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div#stencils div.boxes a {
@@ -365,12 +354,9 @@ div#stencils div.boxes:nth-last-of-type(1) {
 }
 
 @media (min-width: 1024px) {
-
-  div#stencils div.stencils-title,
-  div#stencils div.boxes {
+  div#stencils div.stencils-title, div#stencils div.boxes {
     width: 70%;
   }
-
   div#stencils div.boxes {
     height: 60px;
   }
@@ -381,7 +367,6 @@ div#stencils div.boxes:nth-last-of-type(1) {
     width: 65%;
     font-size: 30px;
   }
-
   div#stencils div.boxes {
     width: 65%;
     height: 70px;
@@ -397,15 +382,15 @@ div#map-container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
 }
 
@@ -438,7 +423,6 @@ div#map-container div.map iframe {
   div#map-container div.map {
     width: 50%;
   }
-
   div#map-container div.map-title {
     width: 70%;
   }
@@ -448,15 +432,12 @@ div#map-container div.map iframe {
   div#map-container {
     height: 600px;
   }
-
   div#map-container div.map {
     height: 400px;
   }
-
   div#map-container div.map-title {
     width: 65%;
   }
-
   div#map-container div.map-title h2 {
     font-size: 45px;
   }
@@ -469,15 +450,15 @@ div#contact {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 70px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -521,18 +502,15 @@ div#contact div.contact-logo img {
     height: 250px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-
   div#contact div.info {
     text-align: left;
   }
-
   div#contact div.contact-logo {
     margin-left: 50px;
   }
-
   div#contact div.contact-logo img {
     width: 100px;
   }
@@ -547,5 +525,4 @@ div.footer p {
   padding: 15px;
   text-align: center;
 }
-
 /*# sourceMappingURL=style.css.map */

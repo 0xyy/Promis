@@ -1,13 +1,23 @@
-h1
-    margin-top: 60px
 div#map-container
-    height: 400px
+    height: 500px
     background-color: #e67e22
     margin-top: 50px
     border-radius: 50px
     display: flex
     align-items: center
     justify-content: center
+    flex-direction: column
+    padding: 20px
+    div.map-title
+        border-top: solid 4px white
+        border-bottom: solid 4px white
+        width: 90%
+        margin: 20px 10px
+        padding: 10px 10px
+        text-align: center
+        h2
+            font-size: 30px
+            color: white
     div.map
         background-color: #fff
         height: 300px
@@ -18,8 +28,14 @@ div#map-container
 @media (min-width: 1024px)
     div#map-container div.map
         width: 50%
+    div#map-container div.map-title
+        width: 70%
 @media (min-width: 1400px)
     div#map-container
-        height: 500px
+        height: 600px
     div#map-container div.map
         height: 400px
+    div#map-container div.map-title
+        width: 65%
+    div#map-container div.map-title h2
+        font-size: 45px

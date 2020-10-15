@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Sansita+Swashed&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d7661838c3.js" crossorigin="anonymous"></script>
+    <link href="dist/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -43,7 +44,7 @@
             <h2>Żaluzje Pionowe</h2>
             <div class="msg">
                 <div class="img">
-                    <img src="img/about1.jpg" alt="Żaluzje Pionowe">
+                    <a href="img/about1.jpg" data-lightbox="www"><img src="img/about1.jpg" alt="Żaluzje Pionowe"></a>
                 </div>
                 <div id="one" class="text">
                     <p>System osłon okiennych pozwalających osłonić duże powierzchnie. Doskonale zabezpieczają
@@ -54,7 +55,7 @@
             <h2>Żaluzje Poziome</h2>
             <div class="msg">
                 <div class="img">
-                    <img src="img/about2.png" alt="Żaluzje Poziomowe">
+                    <a href="img/about2.jpg" data-lightbox="www"><img src="img/about2.png" alt="Żaluzje Poziomowe"></a>
                 </div>
                 <div id="two" class="text">
                     <p> Bardzo funkcjonalny i ponadczasowy system osłon okiennych pozwalający dowolnie regulować ilość
@@ -64,7 +65,7 @@
             <h2>Moskitiery</h2>
             <div class="msg">
                 <div class="img">
-                    <img src="img/about3.jpg" alt="moskitiery">
+                    <a href="img/about3.jpg" data-lightbox="www"><img src="img/about3.jpg" alt="moskitiery"></a>
                 </div>
                 <div id="three" class="text">
                     <p>Zabezpiecza nasze mieszkania i domy przed jakże uciążliwymi insektami. Siatka pozwala prawie w
@@ -74,7 +75,7 @@
             <h2>Rolety</h2>
             <div class="msg">
                 <div class="img">
-                    <img src="img/about4.jpg" alt="kurtyny">
+                    <a href="img/about4.jpg" data-lightbox="www"><img src="img/about4.jpg" alt="kurtyny"></a>
                 </div>
                 <div id="four" class="text">
                     <p>Rozwiązanie dla tych, którzy lubią schronić się przed słońcem oraz wścibskim sąsiadem.
@@ -124,6 +125,13 @@
             <p>© 2004-2020-All Rights Reserved PROMIS zaluzje rolety plisy moskitiery naprawa produkcja dostawa kraków żaluzje kraków</p>
         </div>
     </div>
+    <script src="src/jquery-3.2.1.min.js"></script>
+    <script src="dist/js/lightbox.js"></script>
+    <script>
+        lightbox.option({
+            'albumLabel': "Zdjęcie %1 z %2"
+        })
+    </script>
 </body>
 
 </html>
